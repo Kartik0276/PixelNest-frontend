@@ -28,7 +28,8 @@ const Navbar = () => {
     }
   };
 
-  const handleNavClick = () => {
+  const handleNavClick = (path) => {
+    navigate(path);
     setShowNavbar(false);
   };
 
@@ -113,10 +114,10 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <MDBBtn outline color="light" size="sm" href="/login" onClick={handleNavClick} className="me-2 mb-2 mb-lg-0">
+                <MDBBtn outline color="light" size="sm" onClick={() => handleNavClick('/login')} className="me-2 mb-2 mb-lg-0">
                   <i className="fas fa-sign-in-alt me-2"></i>Login
                 </MDBBtn>
-                <MDBBtn color="warning" size="sm" href="/signup" onClick={handleNavClick}>
+                <MDBBtn color="warning" size="sm"  onClick={ () => handleNavClick('/signup') }>
                   <i className="fas fa-user-plus me-2"></i>Sign Up
                 </MDBBtn>
               </>
