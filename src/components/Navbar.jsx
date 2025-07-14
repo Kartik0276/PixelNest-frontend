@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${showNavbar ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/" onClick={handleNavClick} className="nav-link text-light">
+              <Link to="/" onClick={()=> handleNavClick('/')} className="nav-link text-light">
                 <i className="fas fa-home me-2"></i>Home
               </Link>
             </li>
@@ -82,12 +82,12 @@ const Navbar = () => {
             {isAuthenticated && (
               <>
                 <li className="nav-item">
-                  <Link to="/myposts" onClick={handleNavClick} className="nav-link text-light">
+                  <Link to="/myposts" onClick={()=> handleNavClick('/myposts')} className="nav-link text-light">
                     <i className="fas fa-folder-open me-2"></i>My Posts
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/createPost" onClick={handleNavClick} className="nav-link text-light">
+                  <Link to="/createPost" onClick={()=> handleNavClick('/createPost')} className="nav-link text-light">
                     <i className="fas fa-plus-circle me-2"></i>Create Post
                   </Link>
                 </li>
