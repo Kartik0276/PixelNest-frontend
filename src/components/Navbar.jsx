@@ -6,7 +6,7 @@ import {
   MDBBtn,
 } from 'mdb-react-ui-kit';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useToast } from './ToastContainer';
 import pixelNestLogo from '../assets/PixelNest.png';
 
@@ -73,30 +73,30 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${showNavbar ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a href="/" onClick={handleNavClick} className="nav-link text-light">
+              <Link to="/" onClick={handleNavClick} className="nav-link text-light">
                 <i className="fas fa-home me-2"></i>Home
-              </a>
+              </Link>
             </li>
 
             {isAuthenticated && (
               <>
                 <li className="nav-item">
-                  <a href="/myposts" onClick={handleNavClick} className="nav-link text-light">
+                  <Link to="/myposts" onClick={handleNavClick} className="nav-link text-light">
                     <i className="fas fa-folder-open me-2"></i>My Posts
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="/createPost" onClick={handleNavClick} className="nav-link text-light">
+                  <Link to="/createPost" onClick={handleNavClick} className="nav-link text-light">
                     <i className="fas fa-plus-circle me-2"></i>Create Post
-                  </a>
+                  </Link>
                 </li>
               </>
             )}
 
             <li className="nav-item">
-              <a href="/contact" onClick={handleNavClick} className="nav-link text-light">
+              <Link to="/contact" onClick={handleNavClick} className="nav-link text-light">
                 <i className="fas fa-envelope me-2"></i>Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
