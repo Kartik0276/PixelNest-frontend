@@ -95,7 +95,7 @@ const Navbar = () => {
             )}
 
             <li className="nav-item">
-              <Link to="/contact" onClick={handleNavClick} className="nav-link text-light">
+              <Link to="/contact" onClick={()=> handleNavClick('/contact')} className="nav-link text-light">
                 <i className="fas fa-envelope me-2"></i>Contact
               </Link>
             </li>
