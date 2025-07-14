@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* Dark Theme Global Styles */
+body {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d, #1f1f1f) !important;
+  background-attachment: fixed;
+  color: #e0e0e0 !important;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 85px !important; /* Account for fixed navbar */
+}
+
+html {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d, #1f1f1f) !important;
+  background-attachment: fixed;
+}
+
+/* Dark theme for main content areas */
+.container,
+.container-fluid {
+  background: transparent !important;
+}
+
+/* Dark theme for cards and components */
+.card {
+  background: rgba(45, 45, 45, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  color: #e0e0e0 !important;
+}
+
+.card-body {
+  background: transparent !important;
+  color: #e0e0e0 !important;
+}
+
+/* Dark theme for text elements */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+p {
+  color: #e0e0e0 !important;
+}
+
+/* Dark theme for form elements */
+.form-control {
+  background: rgba(45, 45, 45, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.form-control:focus {
+  background: rgba(45, 45, 45, 0.9) !important;
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25) !important;
+  color: #ffffff !important;
+}
+
+.form-control::placeholder {
+  color: #aaa !important;
+}
+
+/* Dark theme for labels */
+.form-label {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Dark theme for buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #ffc107, #ff8f00) !important;
+  border: none !important;
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ffcd38, #ffa000) !important;
+  color: #1a1a1a !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 20px rgba(255, 193, 7, 0.4) !important;
+}
+
+/* Dark theme for modals */
+.modal-content {
+  background: rgba(45, 45, 45, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  color: #e0e0e0 !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.modal-title {
+  color: #ffffff !important;
+}
+
+/* Dark theme for alerts */
+.alert {
+  background: rgba(45, 45, 45, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e0e0e0 !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Dark theme scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(26, 26, 26, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 193, 7, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 193, 7, 0.8);
+}
