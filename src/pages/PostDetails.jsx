@@ -380,7 +380,7 @@ const PostDetails = () => {
       {/* Mobile Floating Action Buttons */}
       <div className="floating-action-buttons d-md-none">
         {/* Download button - available to all users */}
-        <MDBBtn
+{/*         <MDBBtn
           color="primary"
           floating
           size="lg"
@@ -389,7 +389,7 @@ const PostDetails = () => {
           title="Download image"
         >
           <i className="fas fa-download"></i>
-        </MDBBtn>
+        </MDBBtn> */}
 
         {/* Owner-specific buttons */}
         {isOwner && (
