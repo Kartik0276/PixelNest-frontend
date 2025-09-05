@@ -164,7 +164,7 @@ const SignupPage = () => {
               className={`w-100 mb-3 btn-interactive ripple ${loading ? 'pulse-animation' : ''}`}
               disabled={loading}
             >
-              <i className={`fas fa-user-plus me-1 icon-scale ${loading ? 'rotate-loading' : ''}`}></i>
+              <i className={`fas fa-user-plus me-1 icon-scale ${loading ? '' : ''}`}></i>
               {loading ? 'Creating Account...' : 'Register'}
             </MDBBtn>
           </form>
