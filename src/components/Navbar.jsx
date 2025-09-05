@@ -108,16 +108,16 @@ const Navbar = () => {
                 <span className="text-light me-3 mb-2 mb-lg-0">
                   Welcome, <strong className="text-warning">{user?.name || 'User'}</strong>
                 </span>
-                <MDBBtn color="danger" size="sm" onClick={handleLogout}>
+                <MDBBtn className='flex justify-center items-center' color="danger" size="sm" onClick={handleLogout}>
                   <i className="fas fa-sign-out-alt me-2"></i>Logout
                 </MDBBtn>
               </>
             ) : (
               <>
-                <MDBBtn outline color="light" size="sm" onClick={() => handleNavClick('/login')} className="me-2 mb-2 mb-lg-0">
+                <MDBBtn outline color="light" size="sm" onClick={() => handleNavClick('/login')} className="me-2 mb-2 mb-lg-0 flex justify-center items-center">
                   <i className="fas fa-sign-in-alt me-2"></i>Login
                 </MDBBtn>
-                <MDBBtn color="warning" size="sm"  onClick={ () => handleNavClick('/signup') }>
+                <MDBBtn className='flex justify-center items-center' color="warning" size="sm"  onClick={ () => handleNavClick('/signup') }>
                   <i className="fas fa-user-plus me-2"></i>Sign Up
                 </MDBBtn>
               </>
