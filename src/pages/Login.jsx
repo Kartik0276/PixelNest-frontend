@@ -113,7 +113,7 @@ const Login = () => {
               className={`w-100 mb-3 btn-interactive ripple ${loading ? 'pulse-animation' : ''}`}
               disabled={loading}
             >
-              <i className={`fas fa-sign-in-alt me-1 icon-scale ${loading ? 'rotate-loading' : ''}`}></i>
+              <i className={`fas fa-sign-in-alt me-1 icon-scale ${loading ? '' : ''}`}></i>
               {loading ? 'Logging in...' : 'Login'}
             </MDBBtn>
           </form>
