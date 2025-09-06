@@ -96,7 +96,7 @@ const CommentItem = ({ comment, postId, onCommentUpdate, onCommentDelete }) => {
                   disabled={!editText.trim() || loading}
                   className={`btn-interactive ripple ${loading ? 'pulse-animation' : ''}`}
                 >
-                  <i className={`fas fa-check me-1 icon-scale ${loading ? 'rotate-loading' : ''}`}></i>
+                  <i className={`fas fa-check me-1 icon-scale ${loading ? '' : ''}`}></i>
                   {loading ? 'Saving...' : 'Save'}
                 </MDBBtn>
                 <MDBBtn
