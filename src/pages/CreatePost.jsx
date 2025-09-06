@@ -112,7 +112,7 @@ const CreatePost = () => {
                   label="Title"
                   name="title"
                   type="text"
-                  className="mb-4"
+                  className="mb-4 form-field-interactive glow-focus"
                   value={formData.title}
                   onChange={handleChange}
                   required
@@ -123,7 +123,7 @@ const CreatePost = () => {
                   label="Description"
                   name="description"
                   rows={4}
-                  className="mb-4"
+                  className="mb-4 form-field-interactive glow-focus"
                   value={formData.description}
                   onChange={handleChange}
                   required
