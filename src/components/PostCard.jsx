@@ -151,11 +151,11 @@ const PostCard = ({ post, onPostUpdate, showActions = false }) => {
             <small className="text-muted">
               By {post.createdBy?.name || 'Unknown'} • {formatDate(post.createdAt)}
             </small>
-            {isOwner && (
+{/*             {isOwner && (
               <MDBBadge color="primary" pill>
                 Your Post
               </MDBBadge>
-            )}
+            )} */}
           </div>
 
           <div className="d-flex justify-content-between align-items-center">
